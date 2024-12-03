@@ -1,0 +1,30 @@
+# Node.js
+node_modules/               # Ignore node_modules folder where dependencies are installed.
+
+# Environment variables
+src/.env                     # Ignore .env file located inside the src folder (adjust based on your folder structure).
+src/node_modules/  
+# Logs
+npm-debug.log*              # Ignore npm debug logs.
+yarn-debug.log*             # Ignore Yarn debug logs (if using Yarn).
+yarn-error.log*             # Ignore Yarn error logs (if using Yarn).
+
+# Build output (TypeScript/JavaScript)
+dist/                       # Ignore the build output folder (adjust the folder name if different).
+
+# Dependency directories
+.pnp/                        # Ignore PnP-related files for Yarn (if you're using Yarn Plug'n'Play).
+.pnp.js                      # Ignore PnP-related files for Yarn (if you're using Yarn Plug'n'Play).
+
+# VSCode settings
+.vscode/                     # Ignore VSCode workspace settings.
+
+# macOS
+.DS_Store                    # Ignore macOS system files.
+
+# Windows
+Thumbs.db                    # Ignore Windows system files.
+
+# Ignore other files in the src folder that shouldn't be committed
+src/package-lock.json        # Ignore package-lock.json in the src folder.
+src/package.json             # Ignore package.json in the src folder (you may want to handle this carefully if needed).
