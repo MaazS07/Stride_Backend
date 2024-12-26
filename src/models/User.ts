@@ -9,7 +9,7 @@ export interface IUserDocument extends Document, IUserBase {
 const userSchema = new Schema({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
-    role: { type: String, enum: ['admin', 'manager'], required: true }
+    role: { type: String, enum: ['admin', 'manager','partner'], required: true }
 }, { timestamps: true });
 
 userSchema.pre('save', async function(next) {

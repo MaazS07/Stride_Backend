@@ -7,6 +7,9 @@ import { IOrderDocument } from '../models/Order';
 import { IDeliveryPartner } from '../utils/types'; // Import the partner interface
 
 export class AssignmentService {
+  static createAssignment(arg0: { orderId: unknown; partnerId: unknown; status: string; }) {
+    throw new Error('Method not implemented.');
+  }
   static async assignOrderToPartner(order: IOrderDocument) {
     try {
       // Explicitly type the query result and use type assertion

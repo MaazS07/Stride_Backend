@@ -2,7 +2,7 @@
 node_modules/               # Ignore node_modules folder where dependencies are installed.
 
 # Environment variables
-src/.env                     # Ignore .env file located inside the src folder (adjust based on your folder structure).
+/src/.env                     # Ignore .env file located inside the src folder (adjust based on your folder structure).
 src/node_modules/  
 # Logs
 npm-debug.log*              # Ignore npm debug logs.
