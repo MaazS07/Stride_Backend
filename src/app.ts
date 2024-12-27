@@ -14,7 +14,13 @@ import assignmentRoutes from './routes/assignmentRoutes';
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: '*',  // Allow requests from any origin
+  methods: 'GET,POST,PUT,DELETE',  // Specify allowed HTTP methods
+  allowedHeaders: 'Content-Type,Authorization',  // Allow specific headers
+  credentials: true  // Allow credentials if needed (optional)
+}));
+
 app.use(helmet());
 app.use(morgan('dev'));
 app.use(express.json());
